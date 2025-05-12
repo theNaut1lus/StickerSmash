@@ -1,11 +1,16 @@
-import { StyleSheet, View } from "react-native";
+import { PropsWithChildren } from "react";
+import { StyleSheet, Text, View } from "react-native";
 
 import Button from '@/components/Button';
 import PrimaryButton from '@/components/PrimaryButton';
 
 import ImageViewer from "@/components/imageViewer";
 
+
 const PlaceHolderImage = require('@/assets/images/background-image.png');
+
+export const CustomText = ({ children }: PropsWithChildren) => <Text>{children}</Text>;
+
 
 export default function Index() {
   return (
